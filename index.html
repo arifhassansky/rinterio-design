@@ -4,10 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio Design</title>
+
+    <!-- Font Awesome CDN link -->
+    <script
+      src="https://kit.fontawesome.com/b7f3b95caa.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google font CDN link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Daisy UI + Tailwind CDN link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind CSS configaration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ABEF5F",
+              secondary: "#212121",
+              thirdly: "#494949",
+            },
+            fontFamily: {
+              manrope: "Manrope",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
+  <body class="font-manrope">
     <!-- Header Start -->
-    <header></header>
+    <header class="bg-[#F6F6F6]">
+      <!-- navbar start -->
+      <nav class="pt-12 w-10/12 mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <i
+              class="fa-solid fa-arrow-right bg-primary p-3 rounded-full -rotate-45"
+            ></i>
+            <a href="#" class="text-3xl font-extrabold pl-2">Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-base">
+              <li class="text-secondary"><a>Home </a></li>
+              <li class="text-thirdly"><a>Services</a></li>
+              <li class="text-thirdly"><a>Portfolio</a></li>
+              <li class="text-thirdly"><a>Blogs</a></li>
+              <li class="text-thirdly"><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end invisible sm:visible">
+            <a href="#"
+              ><i
+                class="fa-solid fa-magnifying-glass p-3 rounded-full text-gray-500 bg-white"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="fa-solid fa-cart-shopping mx-4 p-3 rounded-full text-gray-500 bg-white"
+              ></i
+            ></a>
+            <a
+              href="#"
+              class="btn bg-primary rounded-3xl text-xl font-extrabold"
+              >Book Consult
+              <i
+                class="fa-solid fa-arrow-right bg-black text-white p-1 rounded-full -rotate-45"
+              ></i
+            ></a>
+            <div class="dropdown visible">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i
+                  class="fa-solid fa-bars p-3 rounded-full text-gray-500 bg-white"
+                ></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-base right-6"
+              >
+                <li class="text-secondary"><a>Home </a></li>
+                <li class="text-thirdly"><a>Services</a></li>
+                <li class="text-thirdly"><a>Portfolio</a></li>
+                <li class="text-thirdly"><a>Blogs</a></li>
+                <li class="text-thirdly"><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- Main Start -->
     <main></main>
     <!-- Footer Start -->
