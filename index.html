@@ -34,8 +34,7 @@
           extend: {
             colors: {
               primary: "#ABEF5F",
-              secondary: "#212121",
-              thirdly: "#494949",
+              secondary: "#494949",
             },
             fontFamily: {
               manrope: "Manrope",
@@ -47,9 +46,9 @@
   </head>
   <body class="font-manrope">
     <!-- Header Start -->
-    <header class="bg-[#F6F6F6]">
+    <header class="bg-gradient-to-b from-[#F6F6F6] to-white mb-32">
       <!-- navbar start -->
-      <nav class="pt-12 w-10/12 mx-auto">
+      <nav class="pt-12 sm:w-10/12 mx-auto">
         <div class="navbar">
           <div class="navbar-start">
             <i
@@ -59,11 +58,11 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-base">
-              <li class="text-secondary"><a>Home </a></li>
-              <li class="text-thirdly"><a>Services</a></li>
-              <li class="text-thirdly"><a>Portfolio</a></li>
-              <li class="text-thirdly"><a>Blogs</a></li>
-              <li class="text-thirdly"><a>Contact Us</a></li>
+              <li class=""><a>Home </a></li>
+              <li class="text-secondary"><a>Services</a></li>
+              <li class="text-secondary"><a>Portfolio</a></li>
+              <li class="text-secondary"><a>Blogs</a></li>
+              <li class="text-secondary"><a>Contact Us</a></li>
             </ul>
           </div>
           <div class="navbar-end invisible sm:visible">
@@ -95,16 +94,44 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-base right-6"
               >
-                <li class="text-secondary"><a>Home </a></li>
-                <li class="text-thirdly"><a>Services</a></li>
-                <li class="text-thirdly"><a>Portfolio</a></li>
-                <li class="text-thirdly"><a>Blogs</a></li>
-                <li class="text-thirdly"><a>Contact Us</a></li>
+                <li class=""><a>Home </a></li>
+                <li class="text-secondary"><a>Services</a></li>
+                <li class="text-secondary"><a>Portfolio</a></li>
+                <li class="text-secondary"><a>Blogs</a></li>
+                <li class="text-secondary"><a>Contact Us</a></li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
+
+      <!-- banner section start -->
+      <section class="w-11/12 mx-auto flex flex-col items-center">
+        <div class="mb-5">
+          <img src="assets/banner.png" alt="" />
+        </div>
+        <div class="text-center">
+          <h1 class="text-3xl sm:text-6xl font-black text-center mb-5">
+            A barn house of this design has a <br />
+            striking appearance
+          </h1>
+          <p class="font-medium text-thirdly mb-8">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal <br />
+            accents, and large windows that flood the space with natural light.
+          </p>
+          <div class="">
+            <button
+              class="bg-[#D4F6AE] text-xl font-black py-3 px-6 rounded-full border border-primary"
+            >
+              View Details
+              <i
+                class="fa-solid fa-arrow-right bg-primary rounded-full -rotate-45 ml-2 p-2"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </section>
     </header>
     <!-- Main Start -->
     <main></main>
