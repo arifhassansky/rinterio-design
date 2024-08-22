@@ -37,9 +37,16 @@
               secondary: "#494949",
               thirdly: "#737373",
               primary_bg: "#F4F4F4",
+              card_1: "#E7C1D3",
+              card_2: "#EFDA6E",
+              card_3: "#A4DAC3",
+              card_4: "#77AAEA",
             },
             fontFamily: {
               manrope: "Manrope",
+            },
+            backgroundImage: {
+              discussbg: "url('assets/bg.jpg')",
             },
           },
         },
@@ -193,6 +200,126 @@
           <!-- hero image -->
           <div>
             <img class="w-full lg:w-11/12" src="assets/Rectangle.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Works section start -->
+      <section class="bg-primary_bg py-24">
+        <div class="w-10/12 mx-auto">
+          <!-- our works top -->
+          <div class="text-center">
+            <span class="font-bold bg-white px-4 py-2 rounded-full"
+              ><i class="fa-solid fa-arrow-right"></i> How we works</span
+            >
+            <h1 class="mt-4 font-black text-4xl mb-6">Our Works Process</h1>
+            <p class="mb-6 font-medium text-secondary">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, <br />
+              featuring weathered wood, sleek metal accents.
+            </p>
+          </div>
+          <!-- cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- card 1 -->
+            <div class="bg-card_1 p-6 rounded-2xl">
+              <img src="assets/concept.png" alt="" />
+              <h3 class="text-xl font-extrabold mb-2 mt-2">Concept</h3>
+              <p class="font-medium text-secondary">
+                The barn house captivates <br />
+                with its blend of rustic charm <br />
+                and modern.
+              </p>
+            </div>
+            <!-- card 2 -->
+            <div class="bg-card_2 p-6 rounded-2xl">
+              <img src="assets/flow-chart.png" alt="" />
+              <h3 class="text-xl font-extrabold mb-2 mt-2">Design Process</h3>
+              <p class="font-medium text-secondary">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+            <!-- card 3 -->
+            <div class="bg-card_3 p-6 rounded-2xl">
+              <img src="assets/vision.png" alt="" />
+              <h3 class="text-xl font-extrabold mb-2 mt-2">Supervision</h3>
+              <p class="font-medium text-secondary">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+            <!-- card 4-->
+            <div class="bg-card_4 p-6 rounded-2xl">
+              <img src="assets/budget-planning.png" alt="" />
+              <h3 class="text-xl font-extrabold mb-2 mt-2">Budget Planning</h3>
+              <p class="font-medium text-secondary">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Discuss section start -->
+      <section class="bg-discussbg bg-no-repeat bg-cover">
+        <div class="lg:w-8/12 px-4 mx-auto py-8 sm:py-12 lg:py-24">
+          <!-- discussion top -->
+          <div class="text-center">
+            <span class="font-bold bg-[#acef5f38] px-4 py-2 rounded-full"
+              ><i class="fa-solid fa-arrow-right"></i> Let's Connect</span
+            >
+            <h1 class="mt-4 font-black text-4xl mb-6">
+              Let’s Discuss Next Project
+            </h1>
+            <p class="mb-6 font-medium text-secondary">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, <br class="hidden lg:block" />
+              featuring weathered wood, sleek metal accents.
+            </p>
+          </div>
+          <!-- discussion input -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <input
+              class="p-5 rounded-full"
+              type="text"
+              placeholder="First Name*"
+            />
+            <input
+              class="p-5 rounded-full"
+              type="text"
+              placeholder="Last Name*"
+            />
+            <input
+              class="p-5 rounded-full"
+              type="text"
+              placeholder="Phone Number*"
+            />
+            <input
+              class="p-5 rounded-full"
+              type="text"
+              placeholder="Email Number*"
+            />
+          </div>
+          <textarea
+            class="w-full mt-6 p-6 rounded-3xl"
+            placeholder="Write your message here"
+            rows="8"
+            name=""
+            id=""
+          ></textarea>
+          <div class="text-center mt-8">
+            <button class="">
+              <a
+                href="#"
+                class="btn bg-primary rounded-3xl text-xl font-extrabold"
+                >Send Mail
+                <i
+                  class="fa-solid fa-arrow-right bg-black text-white p-1 rounded-full -rotate-45"
+                ></i
+              ></a>
+            </button>
           </div>
         </div>
       </section>
