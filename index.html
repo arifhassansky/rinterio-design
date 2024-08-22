@@ -41,6 +41,7 @@
               card_2: "#EFDA6E",
               card_3: "#A4DAC3",
               card_4: "#77AAEA",
+              footerbg: "#1C1C1C",
             },
             fontFamily: {
               manrope: "Manrope",
@@ -282,28 +283,28 @@
           <!-- discussion input -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <input
-              class="p-5 rounded-full"
+              class="p-5 rounded-full focus:outline-none"
               type="text"
               placeholder="First Name*"
             />
             <input
-              class="p-5 rounded-full"
+              class="p-5 rounded-full focus:outline-none"
               type="text"
               placeholder="Last Name*"
             />
             <input
-              class="p-5 rounded-full"
+              class="p-5 rounded-full focus:outline-none"
               type="text"
               placeholder="Phone Number*"
             />
             <input
-              class="p-5 rounded-full"
+              class="p-5 rounded-full focus:outline-none"
               type="text"
               placeholder="Email Number*"
             />
           </div>
           <textarea
-            class="w-full mt-6 p-6 rounded-3xl"
+            class="w-full mt-6 p-6 rounded-3xl focus:outline-none"
             placeholder="Write your message here"
             rows="8"
             name=""
@@ -325,6 +326,41 @@
       </section>
     </main>
     <!-- Footer Start -->
-    <footer></footer>
+    <footer class="bg-footerbg text-white mt-4">
+      <div class="w-8/12 mx-auto py-16 text-center">
+        <div>
+          <span class="flex items-center justify-center"
+            ><i
+              class="fa-solid fa-arrow-right bg-primary p-3 rounded-full -rotate-45 text-black"
+            ></i>
+            <a href="#" class="text-3xl font-extrabold pl-2">Rinterio</a></span
+          >
+          <p class="text-thirdly font-medium mt-4">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, <br class="hidden lg:block" />
+            featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <div class="mt-12">
+          <ul class="grid grid-cols-1 md:grid-cols-5 space-y-8 sm:space-y-0">
+            <li class=""><a>Home </a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="mt-12">
+          <a
+            href="#"
+            class="btn bg-primary rounded-3xl text-xl font-extrabold border-none"
+            >Book Consult
+            <i
+              class="fa-solid fa-arrow-right bg-black text-white p-1 rounded-full -rotate-45"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
