@@ -309,10 +309,10 @@
             </p>
           </div>
           <!-- cards -->
-          <div class="flex flex-col lg:flex-row gap-6 min-w-full">
+          <div class="grid grid-cols-12 gap-6 mt-6">
             <!-- card_1 -->
             <div
-              class="flex flex-col sm:flex-row gap-6 p-6 border rounded-2xl flex-grow"
+              class="flex flex-col sm:flex-row gap-6 p-6 border rounded-2xl col-span-12 lg:col-span-8"
             >
               <img src="assets/img1.png" alt="" />
               <div>
@@ -322,7 +322,7 @@
                   <br class="hidden lg:block" />
                   and modern. The barn house captivates with its blend of
                   <br class="hidden lg:block" />
-                  rustic charm and modern .
+                  rustic charm and modern.
                 </p>
                 <button class="text-xl font-black">
                   View Details
@@ -332,29 +332,31 @@
                 </button>
               </div>
             </div>
-            <div class="flex flex-col sm:flex-row gap-6">
+            <!-- card 2 -->
+            <div
+              class="flex flex-col sm:flex-row gap-6 col-span-12 lg:col-span-4"
+            >
               <img
-                class="p-6 border rounded-2xl"
+                class="p-6 border rounded-2xl w-full"
                 src="assets/img2.png"
                 alt=""
               />
+              <!-- hidden image -->
               <img
                 class="p-6 border rounded-2xl w-full block lg:hidden"
                 src="assets/img5.png"
                 alt=""
               />
             </div>
-          </div>
-
-          <!-- 2nd line cards -->
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6"
-          >
-            <div class="p-6 border rounded-2xl order-2 lg:order-1">
+            <!-- card 3 -->
+            <div
+              class="p-6 border rounded-2xl order-2 lg:order-1 col-span-12 md:col-span-6 lg:col-span-3"
+            >
               <img class="w-full" src="assets/img3.png" alt="" />
             </div>
+            <!-- card 5 -->
             <div
-              class="flex flex-col sm:flex-row gap-6 p-6 border rounded-2xl sm:col-span-2 order-1 lg:Lorder-2"
+              class="flex flex-col sm:flex-row gap-6 p-6 border rounded-2xl order-1 lg:order-2 col-span-12 lg:col-span-6"
             >
               <img src="assets/img4.png" alt="" />
               <div>
@@ -372,7 +374,10 @@
                 </button>
               </div>
             </div>
-            <div class="p-6 border rounded-2xl order-3">
+            <!-- card 6 -->
+            <div
+              class="p-6 border rounded-2xl order-3 col-span-12 md:col-span-6 lg:col-span-3"
+            >
               <img class="w-full" src="assets/img5.png" alt="" />
             </div>
           </div>
